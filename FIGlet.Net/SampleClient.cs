@@ -22,8 +22,7 @@ namespace FIGlet.Net
             fig.PrepareAlphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.");
             //Reconnaissance de l'image et affichage du texte résultaant
             var reconize = fig.ReconizeAsciiArt(asciiart);
-            Console.WriteLine("Résultat OCR-ArtASCII: {0}", reconize);
-            Console.ReadLine();
+            Console.WriteLine("OCR-ArtASCII: {0}", reconize);
         }
     }
 }
