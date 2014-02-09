@@ -1,7 +1,7 @@
 == FIGlet
 
 
-library write in C# for generating Ascii-Art text and recognize this characters. 
+library write in C# for generating <font color=red>Ascii-Art</font> text and recognize this characters. 
 Article : http://auriou.wordpress.com
 
 == Example
