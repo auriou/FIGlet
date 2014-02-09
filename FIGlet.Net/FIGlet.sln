@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIGlet.Net", "FIGlet.Net.csproj", "{A39BFBED-A59F-4C73-8C9D-F182DEE951EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIGlet.Console", "..\FIGlet.Console\FIGlet.Console.csproj", "{99F7FD5B-B59A-405B-9CCD-7A64070919A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A39BFBED-A59F-4C73-8C9D-F182DEE951EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39BFBED-A59F-4C73-8C9D-F182DEE951EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39BFBED-A59F-4C73-8C9D-F182DEE951EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39BFBED-A59F-4C73-8C9D-F182DEE951EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F7FD5B-B59A-405B-9CCD-7A64070919A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F7FD5B-B59A-405B-9CCD-7A64070919A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F7FD5B-B59A-405B-9CCD-7A64070919A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F7FD5B-B59A-405B-9CCD-7A64070919A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
