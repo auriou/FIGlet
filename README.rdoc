@@ -2,7 +2,7 @@
 
 
 library write in C# for generating *Ascii-Art* text and recognize this characters. 
-Article : http://auriou.wordpress.com
+Article : http://auriou.wordpress.com/2014/02/09/figlet-net-gnration-et-ocr-de-textes-art-ascii/
 
 == Example :
   # 
