@@ -21,7 +21,7 @@ namespace FIGlet.Net
         public string ToAsciiArt(string strText)
         {
             var res = "";
-            for (int i = 1; i < _font.Height; i++)
+            for (int i = 1; i < _font.Height + 1; i++)
             {
                 foreach (var car in strText)
                 {
@@ -43,7 +43,7 @@ namespace FIGlet.Net
             foreach (var car in chaine)
             {
                 var res = "";
-                for (int i = 1; i < _font.Height; i++)
+                for (int i = 1; i < _font.Height + 1; i++)
                 {
                     res += this.GetCharacter(car, i) + Environment.NewLine;
                 }
@@ -53,6 +53,8 @@ namespace FIGlet.Net
         public string ReconizeAsciiArt(string asciiArt)
         {
             var chaine = asciiArt.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            if (chaine.Length < 1)
+                return "";
             var maxChaine = chaine[0].Length;
             var posi = 0;
             var res = "";

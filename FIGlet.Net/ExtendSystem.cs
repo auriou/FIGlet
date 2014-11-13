@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
@@ -43,7 +44,15 @@ namespace FIGlet.Net
             while (!ok && posi <= startErrorPossible)
             {
                 posi++;
-                ok = chaine.Remove(0, posiInChaine + posi).StartsWith(findChaine);
+                try
+                {
+                    ok = chaine.Remove(0, posiInChaine + posi).StartsWith(findChaine);
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Error : " + ex.Message);
+                    ok = false;
+                }
             }
             return ok ? posiInChaine + posi + findChaine.Length : -1;
         }
