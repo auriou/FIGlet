@@ -22,8 +22,8 @@ namespace FIGlet.Console
                 var asciiart = fig.ToAsciiArt(value);
                 System.Console.WriteLine(asciiart);
 
-                var reconize = fig.ReconizeAsciiArt(asciiart);
-                System.Console.WriteLine("OCR-ArtASCII: {0}", reconize);
+                var recognize = fig.RecognizeAsciiArt(asciiart);
+                System.Console.WriteLine("OCR-ArtASCII: {0}", recognize);
             }
         }
     }

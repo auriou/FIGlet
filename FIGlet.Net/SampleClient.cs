@@ -21,8 +21,8 @@ namespace FIGlet.Net
             //Préparation d'un alphabet pour la reconnaissance de l'image Art ASCII
             fig.PrepareAlphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.");
             //Reconnaissance de l'image et affichage du texte résultaant
-            var reconize = fig.ReconizeAsciiArt(asciiart);
-            Console.WriteLine("OCR-ArtASCII: {0}", reconize);
+            var recognize = fig.RecognizeAsciiArt(asciiart);
+            Console.WriteLine("OCR-ArtASCII: {0}", recognize);
         }
     }
 }

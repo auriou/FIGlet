@@ -50,7 +50,7 @@ namespace FIGlet.Net
                 _alphabet.Add(car, res.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries));
             }
         }
-        public string ReconizeAsciiArt(string asciiArt)
+        public string RecognizeAsciiArt(string asciiArt)
         {
             var chaine = asciiArt.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
             if (chaine.Length < 1)
