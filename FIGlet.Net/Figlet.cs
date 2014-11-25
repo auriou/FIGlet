@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace FIGlet.Net
 {
@@ -35,7 +36,10 @@ namespace FIGlet.Net
         {
             var start = _font.CommentLines + ((Convert.ToInt32(car) - 32) * _font.Height);
             var temp = _font.Lines[start + line];
-            return temp.Replace("@", "").Replace(_font.HardBlank, " ");
+            var lineending = temp[temp.Length - 1];
+            var rx = new Regex(@"\" + lineending + "{1,2}$");
+            temp = rx.Replace(temp, "");
+            return temp.Replace(_font.HardBlank, " ");
         }
         public void PrepareAlphabet(string chaine)
         {
