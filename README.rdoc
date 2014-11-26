@@ -25,9 +25,9 @@ Article : http://auriou.wordpress.com/2014/02/09/figlet-net-gnration-et-ocr-de-t
             Console.WriteLine(asciiart);
 
 
-            //Prepare alphabet for reconize 
+            //Prepare alphabet for recognize 
             fig.PrepareAlphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.");
-            //Reconize Ascii-Art
-            var reconize = fig.ReconizeAsciiArt(asciiart);
-            Console.WriteLine("OCR-ArtASCII: {0}", reconize);
+            //Recognize Ascii-Art
+            var recognize = fig.RecognizeAsciiArt(asciiart);
+            Console.WriteLine("OCR-ArtASCII: {0}", recognize);
             Console.ReadLine();
